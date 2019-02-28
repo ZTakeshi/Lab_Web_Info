@@ -1,0 +1,246 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+          background: #d5d5d5;
+        }
+        .menu {
+          width: 100%;
+          height: 55px;
+          background-color: #00b7ff;
+          font-size: 15px;
+          font-family: "Arial";
+        }
+        .menu ul {
+          list-style: none;
+          position: relative;
+        }
+        .menu ul li {
+          width: 150px;
+          float: left;
+        }
+        .menu a {
+          padding: 19px;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          font-family: "Arial";
+          font-weight: bolder;
+          font-size: 11pt;
+          color: black;
+        }
+        .menu a:hover {
+          color: #fff;
+        }
+        label[for=bt-menu] {
+          padding: 5px;
+          background-color: #222;
+          color: #fff;
+          font-family: "Arial";
+          text-align: center;
+          font-size: 30px;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+        }
+        #bt-menu {
+          display: none;
+        }
+        label[for=bt-menu] {
+          display: none;
+        }
+        @media (max-width: 800px) {
+          label[for=bt-menu] {
+            display: block;
+          }
+          #bt-menu:checked ~ .menu {
+            margin-left: 0;
+          }
+          .menu {
+            margin-top: 5px;
+            margin-left: -100%;
+            transition: all 0.4s;
+          }
+          .menu ul li {
+            width: 100%;
+            float: none;
+          }
+        }
+        .separacao{
+            width: 100%;
+            height: 5px;
+            border: 0px;
+            background-color: #0090ca;
+        }
+        h1{
+            font-family: "Arial";
+            font-weight: bold;
+            font-size: 30pt;
+            padding: 20px;
+        } 
+        #infocad{
+          font-family: "Arial";
+          border-collapse: collapse;
+          width: 80%;
+        }
+        #infocad td, #infocad th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        } 
+        #infocad tr:nth-child(even){
+          background-color: #f2f2f2;
+        }
+        #infocad tr:hover {
+          background-color: #bbf79a;
+        }
+        #infocad th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #00b7ff;
+          color: black;
+        }
+         #bg{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        position: fixed;
+        display: none;
+      } 
+      #bg:target{
+        display: block;
+      }  
+      #bg:target ~ .modal{
+        top: 120px;
+        transition: all .3s;
+        transition-delay: .2s;
+      }
+      .modal{
+        width: 500px;
+        height: 405;
+        background-color: #fff;
+        position: absolute;
+        margin-left: -360px;
+        left: 750px;
+        top: -810px;
+      }
+      #close{
+        color: #fff;
+        font-family: 'Arial';
+        text-decoration: none;
+        font-size: 35px;
+        position: absolute;
+        background-color: #000;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        right: 0;
+      }
+      #close:hover{
+        color: #f12121;
+        opacity: .9;
+      }
+      .modal .clientes h1{
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Arial';
+        text-align: center;
+      }
+      .modal .cadastro a{
+        color: blue;
+        font-family: 'Arial';
+      }
+      .modal .login input[type = "text"],.modal .login input[type = "password"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #00b7ff;
+        padding: 14px 50px;
+        width: 200px;
+        outline: none;
+        color: black;
+        border-radius: 10px;
+      }
+      .modal .login input[type = "text"]:focus,.modal .login input[type = "password"]:focus{
+        width: 200px;;
+        border-color: #2ecc71;
+      }
+      .modal .login input[type = "submit"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 14px 40px;
+        outline: none;
+        color: black;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .modal .login input[type = "submit"]:hover{
+        background: #2ecc71;
+      }
+      .padrao{
+        width: 300px;
+        height: 6px;
+        border: 0px;
+        background-color: #00b7ff;
+      }
+      .padrao2{
+        width: 150px;
+        height: 6px;
+        border: 0px;
+        background-color: #00b7ff;
+      }
+      .ordems{
+    width: 400px;
+    height: 400px;
+    background: #d5d5d5;
+}
+.ordems h1{
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Arial';
+  text-align: center;
+}
+.ordems input[type = "text"],.ordems input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #00b7ff;
+  padding: 14px 50px;
+  width: 250px;
+  outline: none;
+  color: black;
+  border-radius: 10px;
+}
+.ordems input[type = "text"]:focus,.ordems input[type = "password"]:focus{
+  width: 250px;
+  border-color: #2ecc71;
+}
+.ordems input[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.ordems input[type = "submit"]:hover{
+  background: #2ecc71;
+}
