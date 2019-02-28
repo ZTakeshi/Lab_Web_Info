@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #00b7ff;
+}
+
+.login {
+  width: 400px;
+  height: 400px;
+  background: #d5d5d5;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.login h1 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.login input[type=text], .login input[type=password] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #00b7ff;
+  padding: 14px 50px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.login input[type=text]:focus, .login input[type=password]:focus {
+  width: 200px;
+  border-color: #2ecc71;
+}
+
+.login input[type=submit] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+  background: #2ecc71;
+}
+
+/*# sourceMappingURL=L_func.css.map */
